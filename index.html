@@ -17,72 +17,64 @@
 <link rel="apple-touch-icon" href="https://al-cion.github.io/img/alcion_logo_512.png">
 <link rel="stylesheet" href="css/app.css"/>
 <link rel="stylesheet" href="css/bootstrap.min.css"  media="screen" />
-  
-  <!-- Customized styles -->
-  <style type="text/css">
-        body {
-            padding-top: 60px;
-            padding-bottom: 40px;
-        }
-  </style>
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
 
-  <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
-
+<!--    [if it IE 9]
+    <script src="js/html5shiv.min.js"></script>
+        [end if]
+-->
 </head>
 <body >
+<header>
+    <h1><a href="#"><img src="./Al-cion_files/alcion_circle_logo.png" width="40" height="40" alt="Alcion"></a></h1>
+    <nav>
+        <ul>
+            <li><a href="#" target="_blank">article</a></li>
+            <li><a href="#" target="_blank">work</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Navigation -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </a>
-                <a class="brand" href="#">Site name</a>
-                <div class="nav-collapse collapse">
-                    <ul class="nav">
-                        <li class="active"><a href="#/home">Home</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#/project_a">Project A</a></li>
-                                <li><a href="#/project_b">Project B</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#/contact">Contact</a></li>
-                        <li><a href="#/imprint">Inprint</a></li>
+<ul class="tablist" role="tablist">
+    <li class="tab tab-active" role="tab"><a href="https://nandazz.github.io/#panel1">Article</a></li>
+    <li class="tab" role="tab"><a href="https://nandazz.github.io/#panel2">Design</a></li>
+</ul>
 
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
+<main class="tabpanel show" id="panel1" role="tabpanel" aria-expanded="true">
+<div class="main_contents">
+    <div class="list">
+      <a href="#" class="block">
+          <img src="./Al-cion_files/cif_header_bg.png" width="100%" height="auto" alt="">
+          <h2>Icon Font 제작하기<small>2016.11.02</small></h2>
+          <p->우리가 자주 사용하게 되는 디자인 요소 중 하나인 <strong>아이콘.</strong>어떻게 제작하고 관리해야 할까?</p>
+      </a>
+    </div>
+    <div class="list">
+        <a href="#" class="block">
+            <img src="./Al-cion_files/gray_list_img.png" width="100%" height="auto" alt="">
+            <h2>Gray, 배경과 텍스트<small>2016.10.04</small></h2>
+            <p>자주 사용하게 되는 Gray를 정하고 <strong>배경과 텍스트</strong>에 활용하고 적용해보자.</p>
+        </a>
+    </div>
+</div>
+</main>
+
+<main class="tabpanel" id="panel2" role="tabpanel">
+    <div class="main_contents">
+        <div class="list">
+            <a href="#" class="block">
+                <img src="./Al-cion_files/cif_header_bg.png" width="100%" height="auto" alt="">
+                <h2>Alcion<small>2016.11.18</small></h2>
+                <p>designer</p>
+            </a>
         </div>
     </div>
+</main>
 
-    <div class="container" ng-app="myApp">
+<script type="text/javascript" src="./Al-cion_files/script.js.다운로드"></script>
+  
 
-        <!--Here go the partials -->
-        <div ng-view></div>
-
-        <!-- Footer -->
-        <hr/>
-        <footer>
-            <p>&copy; Company 2013 - {{ 'Version %VERSION%.' | interpolate }}</p>
-        </footer>
-
-    </div>
-
-    <!-- Finally load libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/bootstrap/bootstrap.min.js"></script>
-    <script src="lib/angular/angular.min.js"></script>
-
-    <script src="js/app.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/filters.js"></script>
-    <script src="js/directives.js"></script>
+<div id="window-resizer-tooltip"><a href="https://al-cion.github.io/#" title="Edit settings"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth"></span> x <span class="tooltipHeight" id="winHeight"></span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth"></span> x <span class="tooltipHeight" id="vpHeight"></span></div><canvas id="__gesture_canvas__" width="0" height="0" style="z-index: 100000000; position: fixed; background: transparent !important; top: 0px; left: 0px;"></canvas><span id="__gesture_preview__" style="z-index: 100000001; position: absolute; background: rgba(255, 255, 225, 0.85098); margin: 0px; border: 1px solid black; white-space: nowrap; display: none;"></span></body></html>
 
 </body>
 </html>
